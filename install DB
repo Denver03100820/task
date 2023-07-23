@@ -1,0 +1,11 @@
+# create DB for task management
+
+CREATE DATABASE IF NOT EXISTS `task-management`
+
+# generating table
+
+use php artisan migrate:fresh
+
+# generate data in statuses using seeder
+
+use php artisan db:seed --class=StatusSeeder
